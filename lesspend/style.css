@@ -1,0 +1,338 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
+
+
+html {
+    font-family: 'Lato';
+    font-size: 20px;
+    background-color: #fff;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    
+}
+
+
+/**************************/
+/* TOP  */
+
+.sec-top{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.30),rgba(0, 0, 0, 0.30)),url(back.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:auto;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.caption{
+    
+    color: #fff;
+    text-align: center;
+}
+
+.caption h1{
+    margin: 15px;
+    font-size:250%;
+    font-weight: 200;
+}
+
+.top-inc-box,.top-exp-box{
+    position: relative;
+    margin: 10px auto;
+    width: 100%;
+    height: 45px;
+    padding: 10px 5px;
+    border-radius: 1px;
+    
+}
+
+.top-inc-box{
+    background-color: #6db2b2;
+}
+.top-exp-box{
+    background-color: #ff543e;
+}
+
+.top-inc-inc,.top-inc-value,.top-exp-exp,.top-exp-value,.top-exp-per{
+    display: inline-block;
+    position: absolute;
+    font-weight: 400;
+    top:50%;
+    transform:translateY(-50%)
+}
+
+
+.top-inc-inc,.top-exp-exp{
+
+    font-size: 70%;
+    
+}
+
+.top-inc-value,.top-exp-value{
+    
+    right:20%;
+    color:#fff;
+}
+
+.top-exp-per{
+    right: 3%;
+    font-size: 55%;
+    color: #fff;
+    background-color: #ff8c7d;
+    padding: 3px;
+    border: 1px;
+    border-radius: 10%
+}
+
+
+/**************************/
+/* BOTTOM */
+
+
+/**************************/
+/* add */
+
+
+.add{
+    
+    background-color: #f7f7f7;
+    padding: 10px 10px;
+    border-bottom: 1px solid #d9d9d9;
+    display: table;
+    width: 100%;
+    
+    
+}
+
+.add-value,.add-des,.add-type{
+    top:50%;
+    padding: 13px;
+    height: 70%;
+    border-radius: 5px;
+    border: 1px solid #d9d9d9;
+    font-size: 80%;
+    transition: border 0.2s
+}
+
+.add-value:focus,
+.add-des:focus,
+.add-type:focus{
+    outline: none;
+    border: 1px solid #6db2b2;
+    
+}
+
+.red:focus{
+    border: 1px solid #ff8c7d !important;
+}
+
+
+.add-type{
+    width: 100%;
+    background-color: #fff;
+}
+
+.add-des{
+    width: 100%;
+}
+
+.add-value{
+    width: 100%;
+}
+
+
+/* display */
+
+.panel{
+    float: left;
+    width:44%;
+    margin: 10px 3%;
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.display{
+    margin: 40px auto;
+    width: 80%;
+}
+
+.panel h2{
+    font-size: 100%;
+    font-weight: normal;
+
+}
+
+h2:after{
+    display: block;
+    height: 1px;
+    background-color: #d9d9d9;
+    content: " ";
+    margin-top:10px;
+
+}
+
+.income{
+    color: #43b7b7
+}
+
+.expense{
+    color: #ff5f4b
+}
+
+.item{
+    position: relative;
+    border-bottom:1px solid #d9d9d9;
+    padding: 5px 15px;
+}
+
+.des,
+.val-inc,
+.val-exp,
+.per
+{
+    padding: 6px 0px;
+    display: inline-block;
+    
+}
+
+
+.per{
+    position: absolute;
+    font-size: 50%;
+    margin-top: 8px;
+    font-weight: 600;
+    right:15px;
+    transition: right 0.5s;
+    padding: 5px 2px;
+    background-color: rgba(255, 206, 200, 0.66);
+    border-radius: 2px;
+}
+
+.des{
+    
+    color: #000 !important;
+    
+}
+
+
+
+.val-inc{
+    position: absolute;
+    font-size: 85%;
+    line-height: 1.6;
+    font-weight: 400%;
+    right:30px;
+    transition: right 0.5s;
+    
+}
+
+
+.val-exp{
+    position: absolute;
+    font-size: 85%;
+    line-height: 1.6;
+    font-weight: 400%;
+    right:70px;
+    transition: right 0.5s;
+    
+}
+
+
+
+
+.btn-del{
+    float:right;
+    visibility: hidden;
+    font-size: 110%;
+    color:inherit;
+    margin-left: 10px;
+    margin-top: 8px;
+    transition: visibility 0.1s;
+    transition-delay: 0.1s
+}
+
+.item:hover .btn-del{
+    visibility: visible;
+    
+}
+
+.item:hover .val-inc{
+    right: 65px;
+}
+
+.item:hover .val-exp{
+    right: 105px;
+}
+
+.item:hover .per{
+    right: 50px;
+}
+
+
+.item:nth-child(even){
+      background-color:rgba(240, 240, 240, 0.58);
+}
+
+/**************************/
+/* buttons */
+/**************************/
+
+
+button{
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    vertical-align: middle;
+    display: inline-block;
+    
+}
+
+.red-btn{
+     color:#ff8c7d !important;
+}
+
+
+
+.btn-add{
+    color: #6db2b2;
+    margin: 0 20px;
+}
+
+.btn-add ion-icon{
+    padding: 5px;
+    font-size: 35px;
+    
+    
+}
+
+
+button:active{
+    transform: translateY(5%);
+}
+
+button:focus{
+   outline: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

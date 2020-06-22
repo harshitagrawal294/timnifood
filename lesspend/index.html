@@ -1,0 +1,216 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+    <head>
+        
+        <meta charset="utf-8">
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,600&display=swap" rel="stylesheet">
+        <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+        
+        <title>
+            Lesspend
+        </title>
+    
+    </head>
+
+    
+    <body>
+        <section class="sec-top">
+            <div class="caption">
+                <p>Available Budget in 
+                    <span class="month">
+                        %Month%:
+                    </span>
+                </p>
+                <h1 class="total-budget">
+                    +2,345.64
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-8 offset-2 offset-md-3 col-lg-4 offset-lg-4">
+                    <div class="top-inc-box">
+                        <div class="top-inc-inc">
+                            INCOME
+                        </div>
+                        <div class="top-inc-value">
+                            +4,300.00
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-6 col-8 offset-2 offset-md-3 col-lg-4 offset-lg-4">
+                    <div class="top-exp-box">
+                        <div class="top-exp-exp">
+                            EXPENSES
+                        </div>
+                        <div class="top-exp-value">
+                            -1,954.36
+                        </div>
+                        <div class="top-exp-per">
+                            45%
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        
+        
+        </section>
+        
+        
+        <section class="sec-bottom">
+            <div class="add">
+                <div class="row justify-content-between mx-3">
+                    <div class="col-12 col-md">
+                            <input type="text" name="add-des"
+                            class="add-des"
+                            placeholder="Add description">             
+                    </div>
+                    <div class="col-5">
+                            <input type="number" name="add-value"
+                            class="add-value" placeholder="Value">
+                    </div>
+                    <div class="col-3">
+                            <select name='type' class='add-type'>
+                                <option value='inc'> +</option>
+                                
+                                <option value='exp'> -
+                                </option>
+                            
+                            </select>
+                    </div>
+                    <div class="row">
+                        <div class="col-2">
+                                <button class="btn-add">
+                                    <ion-icon name="ios-checkmark-circle-outline"></ion-icon>
+                                </button>
+                        </div>
+                    </div>
+                </div>
+
+                
+                
+                
+                
+               
+                
+                
+                        
+            
+            </div>
+            <div class="display clearfix">
+                
+             <div class="panel ">
+                <div class="income">
+                <h2>
+                    INCOME
+                </h2>
+                    
+                    <div class='income-list'>
+                        <!--
+                        <div class="item clearfix" id="inc-0">
+
+                            <div class="des ">
+                            Salary
+                            </div>
+
+                            <div class="val-inc">
+                            +100
+                            </div>
+
+                            <button class="btn-del ">
+                            <ion-icon name="ios-close-circle-outline"></ion-icon>
+                            </button>
+
+                        </div> 
+              
+                        <div class="item clearfix" id="inc-0">
+                            <div class="des ">
+                            Salary
+                            </div>
+
+                            <div class="val-inc">
+                            +100
+                            </div>
+                            <button class="btn-del ">
+                            <ion-icon name="ios-close-circle-outline"></ion-icon>
+                            </button>
+
+                        </div> 
+                        -->
+              
+                    
+                    
+                    
+                    </div>
+                </div>
+                </div>
+                <div class="panel">
+                
+                <div class="expense">
+                <h2>
+                    EXPENSE
+                </h2>
+                <div class='expense-list'>
+                    <!--
+                    <div class="item clearfix" id="exp-0">
+                        <div class="des">
+                        holiday
+                        </div>
+                        <div class="val-exp">
+                        -198
+                        </div>
+                        <div class="per">
+                        198%
+                        </div>
+                        <button class="btn-del">
+                         <ion-icon name="ios-close-circle-outline"></ion-icon>
+                        </button>
+                    </div>
+                    
+                    <div class="item clearfix" id="exp-0">
+                        <div class="des">
+                        holiday
+                        </div>
+                        <div class="val-exp">
+                        -198
+                        </div>
+                        <div class="per">
+                        198%
+                        </div>
+                        <button class="btn-del">
+                         <ion-icon name="ios-close-circle-outline"></ion-icon>
+                        </button>
+                    </div>
+                    -->
+                    
+
+                    
+                    
+                </div>
+                </div>
+                
+             </div>
+                
+                
+                
+                
+            </div>
+            
+        </section>
+        
+        
+    
+    <script src='app.js'>
+    </script>
+    
+    </body>
+
+
+</html>
